@@ -179,11 +179,15 @@ section{
 }
 .menuHeader h2{
   margin: 0;
+  min-width: max-content;
 }
 
 .titleVert{
   width: fill;
   text-align: left;
+}
+.titleVert label{
+  width: max-content;
 }
 .menuHeader label{
   display: block;
