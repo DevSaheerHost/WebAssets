@@ -226,6 +226,7 @@ a{
 }
 .menuBig{
   background: rgba(255, 255, 255, 0.75);
+	 background: transparent;
   height: 340px;
   width: 100%;
   border-radius: 20px;
