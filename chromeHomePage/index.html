@@ -8,23 +8,48 @@
   <title>HTML</title>
   
   <!-- HTML -->
-   <link rel="shortcut icon" type="image/x-icon" href="https://devsaheerhost.github.io/WebAssets/chromeHomePage/assets/dp.gif">
+  
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="https://devsaheerhost.github.io/WebAssets/chromeHomePage/style.css">
+  <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://devsaheerhost.github.io/WebAssets/chromeHomePage/assets/dp.gif">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@34,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="settings.css">
+    
+    <link rel="stylesheet" href="darck.css">
 </head>
 
 <body>
     
-    <div class="main">
+    <div id="main" class="main">
       <nav class="navBar">
-        <div class="hori_layout">
+        <div class="nav_hori_layout">
           <span class="menuBtn"><a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="35" viewBox="0,0,256,256">
+            <svg class="menuSvg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="35" viewBox="0,0,256,256">
 <g fill-opacity="0.52157" fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
 </svg></a>
+          </span>
+          
+          
+            <h3 class="appTitle"></h3>
+          
+          
+          <span>
+            
+            
+            <div class="dropdown">
+              <img class="moreVert dropbtn" src="/assetst/moreVert.png" alt="">
+              <!-- <button class="dropbtn">Dropdown</button> -->
+              <div class="dropdown-content">
+                <a onclick="refresh()" >Refresh</a>
+                <a class="themeBtn" >Theme</a>
+                <a class="settingsBtn" >Settings</a>
+              </div>
+            </div>
           </span>
         </div>
       </nav>
@@ -83,7 +108,7 @@
       <div class="input-feeld">
         <div class="hori_layout">
           <input placeholder="Search" type="text">
-          <button>u</button>
+          <button class="searchBtn">u</button>
         </div>
       </div>
       <!-- sec -->
@@ -114,7 +139,58 @@
       </section>
       
     </div>
+    
+    <div id="settings" class="settingsMain">
+      
+       <nav class="settNav">
+         <div class="hori_layout">
+           <span>
+            <span class="material-symbols-outlined backBtn closeStngs">
+              close
+            </span>
+           </span>
+           
+           <h3>SETTINGS</h3>
+         </div>
+       </nav>
+      
+      <div class="homeLayBanner cardStngs">
+       
+        <h4>Account Info</h4>
+        <label for="">Edit Your Account | Logout | Add Another Account</label>
+        
+      </div>
+      
+       <div class="homeLayBanner cardStngs">
+      
+         <h4>Home Page Layout</h4>
+         <label for="">Edit Home Pages</label>
+      
+       </div>
+       
+        
+    </div>
+    <div class="themeLayout">
+      <div class="titleLayout">
+        <h2>Themes</h2>
+         <span class="material-symbols-outlined backBtn closeTheme">
+           close
+         </span>
+      </div>
+      <label class="themeSubTitle">Choose a Theme</label>
+      <span class="chooseLayout">
+        <label class="lightTheme themesBtn">
+          Light
+        </label>
+        <label class="darckTheme themesBtn">
+          Darck
+        </label>
+        <label class="randomTheme themesBtn" for="">
+          Random
+        </label>
+      </span>
+    </div>
   <!-- Project -->
-  <script src="https://devsaheerhost.github.io/WebAssets/chromeHomePage/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
